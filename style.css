@@ -1,0 +1,110 @@
+/*Custom CSS to Override  or Complement Bootstrap */
+body {
+    font-family: 'Arial', san-serif;
+    line-height: 1.6;
+}
+/*Header adjustments */
+header {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/*Navigation link hover effect */
+.nav-link:hover {
+    color: #0d6efd !important
+}
+/* Social Media Icons Hover Effect */
+.social-icons a:hover {
+    color: #0d6efd !important
+}
+/*Section Padding */
+section {
+    min-height: 400px;
+}
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Slider Container */
+.slider {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  animation: slideBackground 30s infinite ease-out;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Slide Text */
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8); /* semi-transparent text */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  background-color: hwb(41 0% 69% / 0.922); /* optional: semi-transparent bg */
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.slide-text h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.slide-text p {
+  font-size: 2rem;
+}
+
+/* Keyframes for Background Slider */
+@keyframes slideBackground {
+  0% {
+    background-image: url('Assets/bg\ 1.jpg');
+  }
+  33% {
+    background-image: url('Assets/bg\ 2.webp');
+  }
+  66% {
+    background-image: url('Assets/bg3.jpg');
+  }
+  100% {
+    background-image: url('Assets/bg4.jpg');
+  }
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 5%;
+}
+
+.carousel-indicators button {
+  background-color: #333;
+}
+
+.carousel-indicators .active {
+  background-color: #0d6efd;
+}
+
+/* Section styling for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add spacing to account for fixed headers */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
